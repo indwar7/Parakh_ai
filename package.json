@@ -1,0 +1,31 @@
+{
+  "name": "parakh-ai",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "demo": "tsx src/index.ts",
+    "eval": "tsx scripts/run-eval.ts",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [],
+  "author": "Abhaydeep Indwar",
+  "license": "MIT",
+  "description": "Parakh — a fleet-aware AI agent that tells whether a failed payment's decline code is telling the truth, and recovers what it can.",
+  "dependencies": {
+    "@google/genai": "^2.9.0",
+    "dotenv": "^17.4.2",
+    "razorpay": "^2.9.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.3",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.9"
+  }
+}
